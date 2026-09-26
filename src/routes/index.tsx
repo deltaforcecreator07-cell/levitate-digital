@@ -82,6 +82,8 @@ function AspaWeb() {
 
         <div className="relative mx-auto h-[470px] w-full max-w-[520px] [perspective:1200px] sm:h-[560px]">
           <div className="absolute inset-[12%] rounded-full bg-visual-glow blur-3xl" aria-hidden="true" />
+          <motion.div animate={float(0.45, 15)} className="bg-sphere absolute left-[27%] top-[3%] h-24 w-24 rounded-full shadow-visual sm:h-32 sm:w-32" aria-hidden="true" />
+          <motion.div animate={float(1.25, 11)} className="bg-sphere-alt absolute bottom-[5%] right-[14%] h-16 w-16 rounded-full shadow-visual sm:h-24 sm:w-24" aria-hidden="true" />
           <motion.div animate={float(0, 16)} className="glass absolute left-[4%] top-[12%] w-[82%] rounded-2xl p-3 shadow-visual [transform:rotateY(-10deg)_rotateX(7deg)]">
             <div className="flex items-center gap-1.5 border-b border-border pb-3"><i className="h-2 w-2 rounded-full bg-accent" /><i className="h-2 w-2 rounded-full bg-primary" /><i className="h-2 w-2 rounded-full bg-muted-foreground" /></div>
             <div className="grid grid-cols-[.35fr_1fr] gap-3 pt-3">
