@@ -27,12 +27,11 @@ export function ThreeOrbs() {
       container.appendChild(renderer.domElement);
       const cyan = new THREE.MeshPhysicalMaterial({ color: 0x2bd7ed, metalness: 0.38, roughness: 0.16, clearcoat: 1, clearcoatRoughness: 0.08 });
       const violet = new THREE.MeshPhysicalMaterial({ color: 0xa061eb, metalness: 0.42, roughness: 0.17, clearcoat: 1 });
-      const meshes = [
-        new THREE.Mesh(new THREE.SphereGeometry(0.72, 48, 48), cyan),
-        new THREE.Mesh(new THREE.SphereGeometry(0.43, 48, 48), violet),
-      ];
-      meshes[0].position.set(-1.25, 1.65, -0.4);
-      meshes[1].position.set(1.55, -1.65, 0.4);
+      const firstSphere = new THREE.Mesh(new THREE.SphereGeometry(0.72, 48, 48), cyan);
+      const secondSphere = new THREE.Mesh(new THREE.SphereGeometry(0.43, 48, 48), violet);
+      const meshes = [firstSphere, secondSphere];
+      firstSphere.position.set(-1.25, 1.65, -0.4);
+      secondSphere.position.set(1.55, -1.65, 0.4);
       meshes.forEach((mesh) => scene.add(mesh));
       scene.add(new THREE.AmbientLight(0xffffff, 1.9));
       const light = new THREE.PointLight(0xffffff, 75);
@@ -57,8 +56,8 @@ export function ThreeOrbs() {
       function draw(time: number) {
         if (!renderer) return;
         if (!reducedMotion) {
-          meshes[0].position.y = 1.65 + Math.sin(time * 0.00075) * 0.16;
-          meshes[1].position.y = -1.65 + Math.sin(time * 0.0009 + 1.8) * 0.13;
+          firstSphere.position.y = 1.65 + Math.sin(time * 0.00075) * 0.16;
+          secondSphere.position.y = -1.65 + Math.sin(time * 0.0009 + 1.8) * 0.13;
           meshes.forEach((mesh) => { mesh.rotation.y += 0.004; });
         }
         renderer.render(scene, camera);
