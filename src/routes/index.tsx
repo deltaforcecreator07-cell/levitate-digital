@@ -66,7 +66,7 @@ function AspaWeb() {
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="relative z-10">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3.5 py-2 text-xs font-semibold text-secondary-foreground">
             <span className="h-2 w-2 rounded-full bg-success shadow-success" />
-            Now booking projects for this week
+            Premium websites for local businesses
           </div>
           <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.06] tracking-normal sm:text-6xl lg:text-7xl">
             I Build High-Converting Websites for Local Businesses in <span className="text-gradient">24–48 Hours.</span>
@@ -76,12 +76,7 @@ function AspaWeb() {
           </p>
           <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
             <AspaButton className="animate-soft-pulse px-7 py-4 text-base">Get Your Free Demo</AspaButton>
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <div className="flex -space-x-2" aria-hidden="true">
-                {["A", "J", "M"].map((letter) => <span key={letter} className="grid h-8 w-8 place-items-center rounded-full border-2 border-background bg-secondary text-[10px] font-bold text-secondary-foreground">{letter}</span>)}
-              </div>
-              No commitment required
-            </div>
+            <span className="text-sm text-muted-foreground">No commitment required</span>
           </div>
         </motion.div>
 
