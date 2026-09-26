@@ -92,7 +92,7 @@ function AspaWeb() {
             </div>
           </motion.div>
           <motion.div animate={float(0.7, 13)} className="glass absolute bottom-[8%] right-[1%] w-[66%] rounded-2xl p-4 shadow-visual [transform:rotateY(10deg)_rotateX(-4deg)]">
-            <div className="flex items-center justify-between"><div><p className="text-[10px] uppercase text-muted-foreground">This month</p><p className="mt-1 text-2xl font-bold">+68%</p></div><div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/15 text-primary"><ArrowRight /></div></div>
+            <div className="flex items-center justify-between"><div><p className="text-[10px] uppercase text-muted-foreground">Built for growth</p><p className="mt-1 text-lg font-bold">More than a website.</p></div><div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/15 text-primary"><ArrowRight /></div></div>
             <div className="mt-4 flex h-20 items-end gap-2">{[35,55,42,78,65,92].map((h, i) => <i key={i} className="flex-1 rounded-t-sm bg-chart-1" style={{ height: `${h}%` }} />)}</div>
           </motion.div>
           <motion.div animate={float(0.25, 18)} className="glass absolute right-[2%] top-[4%] grid h-20 w-20 place-items-center rounded-2xl text-primary shadow-glow"><Rocket className="h-9 w-9" /></motion.div>
@@ -113,7 +113,7 @@ function AspaWeb() {
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <TiltCard key={feature.title} className="glass group min-h-64 rounded-2xl p-6 transition-colors hover:border-primary/40">
+              <TiltCard key={feature.title} className="glass group min-h-64 rounded-lg p-6 transition-colors hover:border-primary/40">
                 <motion.div animate={float(index * 0.15, 7)} className="grid h-14 w-14 place-items-center rounded-xl bg-icon text-primary shadow-inset"><Icon className="h-7 w-7" /></motion.div>
                 <p className="mt-12 text-xs font-bold text-primary">0{index + 1}</p>
                 <h3 className="mt-2 text-xl font-bold">{feature.title}</h3>
@@ -126,7 +126,7 @@ function AspaWeb() {
 
       <section id="pricing" className="relative z-10 px-5 pb-28 pt-10 md:px-8">
         <div className="mx-auto mb-12 max-w-2xl text-center"><p className="section-label">Simple pricing</p><h2 className="mt-4 text-3xl font-bold sm:text-5xl">One package. Everything included.</h2></div>
-        <TiltCard className="pricing-glow glass mx-auto max-w-3xl rounded-2xl p-6 sm:p-10">
+        <TiltCard className="pricing-glow glass mx-auto max-w-3xl rounded-lg p-6 sm:p-10">
           <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-bold text-primary"><ShieldCheck className="h-4 w-4" /> Complete service</div>
