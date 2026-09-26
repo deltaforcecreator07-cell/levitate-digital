@@ -174,8 +174,6 @@ html { scroll-behavior: smooth; }
 @utility bg-hero-panel { background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 22%, var(--secondary)), color-mix(in oklab, var(--accent) 18%, var(--secondary))); }
 @utility bg-section { background: color-mix(in oklab, var(--secondary) 42%, transparent); }
 @utility bg-icon { background: linear-gradient(135deg, color-mix(in oklab, var(--primary) 16%, transparent), color-mix(in oklab, var(--accent) 12%, transparent)); }
-@utility bg-sphere { background: radial-gradient(circle at 30% 25%, var(--foreground), var(--primary) 21%, color-mix(in oklab, var(--accent) 60%, var(--background)) 65%, var(--background)); }
-@utility bg-sphere-alt { background: radial-gradient(circle at 30% 25%, var(--foreground), var(--accent) 25%, color-mix(in oklab, var(--primary) 50%, var(--background)) 70%, var(--background)); }
 @utility shadow-glow { box-shadow: 0 0 28px color-mix(in oklab, var(--primary) 26%, transparent); }
 @utility shadow-glow-strong { box-shadow: 0 0 38px color-mix(in oklab, var(--primary) 42%, transparent); }
 @utility shadow-visual { box-shadow: 0 32px 70px color-mix(in oklab, var(--background) 72%, transparent), 0 0 45px color-mix(in oklab, var(--accent) 12%, transparent); }

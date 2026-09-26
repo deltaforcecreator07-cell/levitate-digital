@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - AspaWeb is a single-route marketing site; section navigation uses in-page anchors to preserve the requested landing-page flow.
+- The hero's 3D spheres render in a browser-only Three.js canvas, while interface levitation and tilt use Motion; this keeps SSR safe and honors the visual brief.
